@@ -134,7 +134,7 @@ class BitmaxBTC(API):
                          url='https://bitmax.io/api/v1/quote?symbol=BTC-USDT',
                          bid_unpack="float(dict(self.HTTPResponse.json())['bidPrice'])",
                          ask_unpack="float(dict(self.HTTPResponse.json())['askPrice'])",
-                         rate_limit=0.2
+                         rate_limit=1.0
                          )
 
 
@@ -162,7 +162,7 @@ class HuobiBTC(API):
                          url='https://api.huobi.pro/market/detail/merged?symbol=btcusdt',
                          bid_unpack="float(list(dict(self.HTTPResponse.json()['tick'])['bid'])[0])",
                          ask_unpack="float(list(dict(self.HTTPResponse.json()['tick'])['ask'])[0])",
-                         rate_limit=0.1)
+                         rate_limit=1.0)
 
 
 class KrakenBTC(API):
@@ -180,7 +180,7 @@ class KucoinBTC(API):
                          url='https://openapi-v2.kucoin.com/api/v1/market/orderbook/level1?symbol=BTC-USDT',
                          bid_unpack="float(dict(self.HTTPResponse.json()['data'])['bestBid'])",
                          ask_unpack="float(dict(self.HTTPResponse.json()['data'])['bestAsk'])",
-                         rate_limit=0.2)
+                         rate_limit=1.0)
 
 
 
@@ -190,15 +190,15 @@ class OkcoinBTC(API):
                          url='https://www.okcoin.com/api/spot/v3/instruments/BTC-USDT/ticker',
                          bid_unpack="float(dict(self.HTTPResponse.json())['bid'])",
                          ask_unpack="float(dict(self.HTTPResponse.json())['ask'])",
-                         rate_limit=0.18)
+                         rate_limit=1.0)
 
 
 
 db_name = list()
 if sys.platform.startswith('win'):
-    db_name.append('dbs\\btc_usdt_db.sqlite')
+    db_name.append('btc_usdt_db.sqlite')
 elif sys.platform == 'linux':
-    db_name.append('dbs/btc_usdt_db.sqlite')
+    db_name.append('btc_usdt_db.sqlite')
 
 
 def start():
