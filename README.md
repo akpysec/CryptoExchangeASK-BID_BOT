@@ -11,4 +11,5 @@ BTC_USDT.py workflow:
 4) Also a e-mail notification function if something goes wrong (Needs input of your e-mail & password for sending e-mails & another e-mail address for recieving)
 
 Graph.py:
-Run Graph.py couple of seconds after launching the BTC_USDT.py to view the DATA(ASK:BID) in a graph
+Run Graph.py couple of seconds after launching the BTC_USDT.py to view the DATA(ASK:BID) in a graph.
+Adjust name & password parameters or if not used comment them out.
