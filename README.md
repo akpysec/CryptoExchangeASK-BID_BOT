@@ -4,6 +4,7 @@ Created in partnership with Milan Charniak (https://github.com/charnim)
 *RUN IN LINUX, WINDOWS GAVE ME TROUBLE
 
 Use python 3.6+
+
 Basic ASK:BID sniffer of BTC-USDT over multiple Exchanges.
 
 BTC_USDT.py workflow:
@@ -33,7 +34,7 @@ Best practice is to run in TMUX like so:
 
 If there's a need to update version of a running script, you MUST kill all previous processes with:
 
-pkill python3
+    pkill python3
 
 and only after launch a new script, otherwise you will get DB locked.
 
