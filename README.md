@@ -1,5 +1,5 @@
 # Crypto_Exchange_ASK_BID_snoopy
-Created in partnership with Milan Charniak (https://github.com/charnim)
+Created in partnership with [Milan Charniak](https://github.com/charnim)
 
 *RUN IN LINUX, WINDOWS GAVE ME TROUBLE
 
